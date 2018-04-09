@@ -1,0 +1,12 @@
+@startuml
+start
+:获取图书信息;
+if ("有余量") then (true)
+    :借书成功;
+    else (no)
+    :借书失败，此书已被借阅完;
+    endif
+:更新图书信息;
+:更新用户信息;
+stop
+@enduml

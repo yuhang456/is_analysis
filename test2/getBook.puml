@@ -1,0 +1,12 @@
+@startuml
+start
+:获取图书信息;
+if ("归还为逾期") then (true)
+    :还书成功;
+    else (no)
+    :还书失败，需要缴纳罚款;
+    endif
+:更新图书信息;
+:更新用户信息;
+stop
+@enduml

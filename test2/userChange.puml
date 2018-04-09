@@ -1,0 +1,22 @@
+@startuml
+start
+:登录;
+if (非系统管理员) then (true)
+      :提示重新输入账号密码;
+    else (no)
+    :登录成功;
+    endif;
+:增加用户;
+if(用户名不合法) then (true)
+    :提示用户名不合法;
+    else (no)
+    :提示增加成功;
+    endif
+:删除用户;
+if(用户名不存在) then (true)
+    :提示用户名不存在;
+    else (no)
+    :提示删除成功;
+    endif
+stop
+@enduml

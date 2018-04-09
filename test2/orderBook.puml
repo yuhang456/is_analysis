@@ -1,0 +1,17 @@
+@startuml
+start
+:登录;
+if (用户不合法) then (true)
+      :提示注册，或者申请解封;
+    else (no)
+    :登录成功;
+    endif;
+:查询图书;
+:预定图书;
+if(图书不存在或者没有库存) then (true)
+    :提示现在无法进行预定;
+    else (no)
+    :提示预订成功;
+    endif
+stop
+@enduml
