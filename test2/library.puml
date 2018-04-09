@@ -1,0 +1,35 @@
+@startuml
+
+left to right direction
+:借阅者: as User
+:图书管理员: as Admin
+:系统管理员: as Libraryer
+
+rectangle 图书管理系统 {
+User ---> (登录)
+User ---> (查询借阅情况)
+User ---> (预约图书)
+User ---> (取消预订)
+User ---> (续借图书)
+User ---> (查询书目)
+User ---> (借书卡办理)
+User ---> (借书卡挂失)
+User ---> (查询个人信息)
+(借出图书).>(验证读者身份信息):<<include>>
+(借出图书) <- Admin
+(查询借阅情况) <- Admin
+(验证读者身份信息)<.(归还图书):<<include>>
+(归还图书)<.(超期罚款):<<extend>>
+(归还图书) <- Admin
+(读者信息维护) <- Libraryer
+(查询个人信息)<.(读者信息维护):<<include>>
+(借书卡管理) <- Admin
+(借书卡办理)<.(借书卡管理):<<include>>
+(借书卡挂失)<.(借书卡管理):<<include>>
+(登录)<--- Admin
+(登录)<-- Libraryer
+(查询数目)<-- Admin
+(书目维护) <--- Libraryer
+(查询书目)<.(书目维护):<<use>>
+}
+@enduml
