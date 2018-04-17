@@ -1,0 +1,5 @@
+@startuml
+Class 借书卡{
+借书卡号="2015101111"
+}
+@enduml
