@@ -1,0 +1,17 @@
+@startuml
+actor 图书管理员
+participant "图书管理系统" as A
+participant "借书卡信息" as C
+图书管理员 -> A: 登录
+activate A
+A->图书管理员:验证账户正确性
+图书管理员 -> A: 新增借书卡信息
+A -> C: 查询借书卡信息是否存在
+activate C
+C-> A: 不存在
+A ->C:新建借书卡信息
+C-> A: 存在，返回存在信息
+deactivate C
+deactivate A
+
+@enduml

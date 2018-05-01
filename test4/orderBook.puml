@@ -1,0 +1,26 @@
+@startuml
+
+actor 读者
+participant "图书管理系统" as A
+participant "读者信息" as B
+participant "图书库存" as C
+participant "图书预定记录" as D
+
+activate A
+读者 -> A:输入图书关键字可做模糊查询
+读者 -> A:读取借书卡
+A -> B: 读取读者是否符合预定要求
+activate B
+B -> A: 返回预定性
+deactivate B
+A -> C: 查询库存
+activate C
+C-> A: 返回库存
+A -> C: 更新库存
+deactivate C
+A -> D: 创建预定记录
+D -> A:打印预定凭证
+deactivate D
+deactivate A
+
+@enduml

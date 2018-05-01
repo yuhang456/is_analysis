@@ -1,0 +1,19 @@
+@startuml
+actor 系统管理员
+participant "图书管理系统" as A
+participant "图书信息" as C
+系统管理员 -> A: 登录
+activate A
+A->系统管理员:验证账户正确性
+系统管理员 -> A: 图书编号
+系统管理员 -> A: 对图书的操作（增加，删除，修改）
+系统管理员 -> A: 新增借书卡信息（选择增加或修改时填写）
+A -> C: 查询图书编号
+activate C
+C-> A: 不存在
+A ->C:可执行新增操作（不能执行其他操作）
+C-> A: 存在（可执行删除修改操作）
+deactivate C
+deactivate A
+
+@enduml

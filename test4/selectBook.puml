@@ -1,0 +1,16 @@
+@startuml
+actor 图书管理员
+participant "图书管理系统" as A
+participant "图书信息" as C
+图书管理员 -> A: 登录
+activate A
+A->图书管理员:验证账户正确性
+图书管理员 -> A: 输入图书的关键字可做模糊查询
+A -> C: 查询图书信息
+activate C
+C-> A: 返回查询信息
+deactivate C
+A -> 图书管理员: 查询信息
+deactivate A
+
+@enduml

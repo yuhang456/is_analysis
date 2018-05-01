@@ -1,0 +1,31 @@
+@startuml
+actor 读者
+actor 图书管理员
+participant "图书管理系统" as A
+participant "读者信息" as B
+participant "图书库存" as C
+participant "借书记录" as D
+
+读者->图书管理员 :图书编号
+读者->图书管理员 :读者借书卡
+图书管理员 -> A: 管理员登录
+activate A
+A->图书管理员:验证账户正确性
+图书管理员 -> A: 读取读者借书卡
+A -> B: 读取读者是否符合借书要求
+activate B
+B -> A: 返回可借性
+deactivate B
+A -> C: 查询库存
+activate C
+C-> A: 返回库存
+A -> C: 更新库存
+deactivate C
+A -> D: 创建借书记录
+D -> A:打印借书凭证
+deactivate D
+A -> 图书管理员: 借出图书
+deactivate A
+图书管理员->读者:借书成功
+
+@enduml
