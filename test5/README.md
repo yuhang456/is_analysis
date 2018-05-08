@@ -88,7 +88,7 @@
 
 #### 1.获取图书信息
 <li>获取图书信息</li>
-<li>请求地址： http://localhost:8080/bookManage/api/bookInfor</li>
+<li>请求地址： <a>http://localhost:8080/bookManage/api/bookInfor</a></li>
 <li>请求方法：POST</li>
 <li>请求参数：</li>
 
