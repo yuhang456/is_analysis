@@ -10,7 +10,7 @@
 <td>201510414324</td>
 <td>2015级软件工程三班</td>
 <td>余行</td>
-<td><img src="my.jpg" width="70"/></td>
+<td><img src="m.jpg" width="70"/></td>
 </tr>
 </table>
 
@@ -88,7 +88,7 @@
 
 #### 1.获取图书信息
 * 获取图书信息
-* 请求地址： http://localhost:8080/bookManage/api/bookInfor
+* 请求地址：http://localhost/bookManage/api/bookInfor
 * 请求方法：POST
 * 请求参数：
 
@@ -96,7 +96,7 @@
 |:-:|:-:|:-:|
 |userInfor|是|用于验证请求的认证信息|
 |bookInofr|是|用于检索图书的信息|
-* 返回实例
+<li>返回实例</li>
 
     {
       "info": "true",
@@ -104,10 +104,10 @@
          "isbn":123456789,
          "title":"许三观卖血记",
          "author":"余华",
-          "tags":"一个人因为旧时代卖血度过了很多困难，却因为新时代的带来产生了忧虑.....,"
-           "surplus":100,
-          "publisher":"新华出版社",
-          "price":20,
+          "tags":"一个人因为旧时代卖血度过了很多困难，却因
+          "price":20,为新时代的带来产生了忧虑.....,"
+                                "surplus":100,
+                               "publisher":"新华出版社",
          },
      }
   |参数名称|说明|
