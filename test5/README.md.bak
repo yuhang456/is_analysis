@@ -81,22 +81,22 @@
 ### 2.2 还书界面
 ![](pic2.png)
 
-<li>用例图参见：借书用例</li>
-<li>类图参见：借书类</li>
-<li>顺序图参见：借书顺序图</li>
-<li>API接口如下</li>
+* 用例图参见：借书用例
+* 类图参见：借书类
+* 顺序图参见：借书顺序图
+* API接口如下
 
 #### 1.获取图书信息
-<li>获取图书信息</li>
-<li>请求地址： http://localhost:8080/bookManage/api/bookInfor</li>
-<li>请求方法：POST</li>
-<li>请求参数：</li>
+* 获取图书信息
+* 请求地址： http://localhost:8080/bookManage/api/bookInfor
+* 请求方法：POST
+* 请求参数：
 
 |参数名称|必填|说明|
 |:-:|:-:|:-:|
 |userInfor|是|用于验证请求的认证信息|
 |bookInofr|是|用于检索图书的信息|
-<li>返回实例</li>
+* 返回实例
 
     {
       "info": "true",
