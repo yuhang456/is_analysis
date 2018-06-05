@@ -25,7 +25,7 @@
 即可，课程不需修改，因为课程是通过管理员添加的，所以各高校可以通过自己的实际情况添加课程
 
 ## 2.系统总体结构
-![](pic1.png)
+![](./images/pic1.png)
 [界面设计](https://yuhang456.github.io/is_analysis/test6/ui/index.html)
 
 ## 3.用例图设计 [源码](src/caseTotal.puml)
