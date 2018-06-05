@@ -1,0 +1,14 @@
+@startuml
+
+title 基于GitHub的实验管理平台--修改用户密码用例的顺序图
+
+actor user
+
+user -> userDate:验证输入的初始密码是否正确
+
+userDate -> user :正确，修改的数据库信息并返回成功
+
+userDate -> user :错误，返回失败
+
+
+@endum
