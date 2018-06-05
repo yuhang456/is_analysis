@@ -42,7 +42,7 @@
 - ### [登出用例](user/登出用例.md),[界面](https://yuhang456.github.io/is_analysis/test6/ui/index.html)
 - ### [查看用户信息用例](user/查看用户信息用例.md),[界面](https://yuhang456.github.io/is_analysis/test6/ui/userinfor.html)
 - ### [修改用户密码用例](user/修改用户密码用例.md),[界面](https://yuhang456.github.io/is_analysis/test6/ui/repassword.html)
-- ### [修改用户信息用例](user/修改用户信息用例.md),[界面](https://yuhang456.github.io/is_analysis/test6/ui/reuserInfor.html)
+- ### [修改用户信息用例](user/修改用户信息用例.md),[界面](https://yuhang456.github.io/is_analysis/test6/ui/reuserinfor.html)
 - ### [老师选课用例](user/老师选课用例.md),[界面](https://yuhang456.github.io/is_analysis/test6/ui/teacherchoose.html)
 - ### [学生选课用例](user/学生选课用例.md),[界面](https://yuhang456.github.io/is_analysis/test6/ui/studentchoose.html)
 - ### [发布实验用例](user/发布实验用例.md),[界面](https://yuhang456.github.io/is_analysis/test6/ui/fbtest.html)
