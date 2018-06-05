@@ -1,0 +1,17 @@
+@startuml
+
+title 基于GitHub的实验管理平台--修改用户信息用例的顺序图
+
+actor user
+
+user -> 修改界面:修改用户信息，验证用户信息是否符合规范
+
+修改界面 -> userDate:提交数据，更新数据库
+
+修改界面->user:不符合规范，重新输入
+
+userDate ->user:修改成功
+
+
+
+@enduml

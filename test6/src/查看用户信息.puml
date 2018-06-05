@@ -1,0 +1,13 @@
+@startuml
+
+title 基于GitHub的实验管理平台--登出用例的顺序图
+
+actor user
+
+user -> 个人信息操作页面:查看个人信息
+
+个人信息操作页面->user:返回用户的基本信息
+
+
+
+@enduml

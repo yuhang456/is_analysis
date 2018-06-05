@@ -1,0 +1,13 @@
+@startuml
+
+title 基于GitHub的实验管理平台--登出用例的顺序图
+
+actor user
+
+user -> 实验管理平台:登出
+
+实验管理平台->user:清除用户登录信息，返回成功
+
+
+
+@enduml

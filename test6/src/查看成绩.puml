@@ -1,0 +1,12 @@
+@startuml
+
+title 基于GitHub的实验管理平台--查看成绩用例的顺序图
+
+actor student
+
+student -> 数据库:学生的学号
+
+数据库->student:返回成绩结果
+
+
+@enduml
