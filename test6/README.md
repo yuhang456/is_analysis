@@ -26,7 +26,7 @@
 
 ## 2.系统总体结构
 ![](./images/pic1.png)
-[界面设计](https://yuhang456.github.io/is_analysis/test6/ui/index.html)
+* [界面设计](https://yuhang456.github.io/is_analysis/test6/ui/index.html)
 
 ## 3.用例图设计 [源码](src/caseTotal.puml)
 ![](./images/caseTotal.png)
