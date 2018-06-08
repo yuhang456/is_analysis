@@ -1,6 +1,6 @@
 @startuml
 
-title 基于GitHub的实验管理平台--登出用例的顺序图
+title 基于GitHub的实验管理平台--查看用户信息用例的顺序图
 
 actor user
 
